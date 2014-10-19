@@ -1,0 +1,19 @@
+Program to measure the size and cost of accessing a TLB
+
+The idea of tlb.c is simple, we use two arguments to define how many pages you want to access in one test and how many trails you want to repeat.
+
+The output will tell us the avarage access time of one single page table entry.
+
+
+Simply type "make" to get binary files.
+
+to make a series test, type ./run
+series test will test the form 1 pagenum to 2power11 and report aveage accessing time.
+
+to make a single test, type ./tlb Pagenum Trails
+
+Arguments:
+
+arg1:
+Pagenum: This is an integer indicating the total page numbers you want to measure in this test.
+Trails: This is an integer indicating how many loops you want to repeat for the page numbers reading.
